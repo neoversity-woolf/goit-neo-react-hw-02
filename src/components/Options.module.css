@@ -1,0 +1,12 @@
+.options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  text-transform: capitalize;
+  border: 1px solid red;
+  border-radius: 0.75rem;
+}
