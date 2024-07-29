@@ -22,7 +22,11 @@ const Options = ({ options, total, updateFeedback, resetFeedback }) => {
         );
       })}
       {!!total && (
-        <button type="reset" onClick={() => resetFeedback()}>
+        <button
+          onClick={() => resetFeedback()}
+          className={css.reset}
+          type="reset"
+        >
           Reset
         </button>
       )}

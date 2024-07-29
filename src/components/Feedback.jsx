@@ -10,15 +10,15 @@ const Feedback = ({ options, totalPoints, positivePoints }) => {
           const [name, value] = feedback;
           return (
             <li key={idx} className={css.item}>
-              <span className={css.caption}>{name}</span>:
+              <span className={css.caption}>{name} : </span>
               <span className={css.value}>{value}</span>
             </li>
           );
         })}
       </ul>
       <div className={css.stats}>
-        <p>Total:{totalPoints}</p>
-        <p>Positive: {positivePoints}</p>
+        <p className={css.statsMeta}>Total: {totalPoints}</p>
+        <p className={css.statsMeta}>Positive: {positivePoints} %</p>
       </div>
     </>
   );

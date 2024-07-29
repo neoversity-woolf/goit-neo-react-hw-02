@@ -1,8 +1,11 @@
+import css from './Description.module.css';
 const Description = () => {
   return (
-    <div>
-      <h1>Sip Happens Café</h1>
-      <p>
+    <div className={css.jumbotron}>
+      <h1 className={css.title}>
+        Sip Happens <span>Café</span>
+      </h1>
+      <p className={css.desc}>
         Please leave your feedback about our service by selecting one of the
         options below.
       </p>
